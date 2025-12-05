@@ -1,0 +1,124 @@
+#principal {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3ABA;
+    color: white;
+    padding: 50px;
+}
+
+#principal-text {
+    width: 30%;
+}
+
+#principal-text .title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#principal-text .subtitle {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+#principal-text .description {
+    font-size: 20px;
+    font-weight: normal;
+    color: orange;
+}
+
+#principal-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+#principal img {
+    width: 50%;
+}
+
+#feedbacks {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#feedbacks h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 100px;
+}
+
+#feedbacks .feedbacks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#feedbacks div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#feedbacks p {
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#feedbacks h6 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #2C3ABA;
+}
+
+#parceiros {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3ABA;
+    color: white;
+    padding: 50px;
+}
+
+#parceiros h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 100px;
+}
+
+#parceiros ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#parceiros li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+}

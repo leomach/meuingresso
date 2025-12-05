@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#cabecalho img {
+    height: 50px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    font-size: 14px;
+}
+
+#menu .nav-item {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+#menu .nav-item:hover,
+#menu .selecionado {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    background-color: #2C3ABA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .login {
+    text-decoration: none;
+    min-width: 80px;
+    min-height: 40px;
+    color: white;
+    background-color: #2C3ABA;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+}

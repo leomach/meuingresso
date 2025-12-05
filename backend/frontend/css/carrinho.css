@@ -1,0 +1,91 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+section article:hover {
+    transform: scale(1.009);
+}
+
+section article h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+section article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section article .quantidade {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+section article a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+main .botao {
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    background-color: #2C3ABA;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+main .botao:hover {
+    background-color: transparent;
+    color: #2C3ABA;
+    border: 1px solid #2C3ABA;
+}
