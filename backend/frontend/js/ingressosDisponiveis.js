@@ -37,7 +37,7 @@ function exibirFilmes(filmes) {
         generoSpan.textContent = `Gênero: ${filme.genero}`;
     
         const valorSpan = document.createElement('span');
-        valorSpan.textContent = `Valor: R$ ${filme.valor.toFixed(2)}`;
+        valorSpan.textContent = `Valor: R$ ${filme.valor}`;
     
         detalhesDiv.appendChild(tituloH3);
         detalhesDiv.appendChild(descricaoP);

@@ -1,7 +1,9 @@
 import e from "express";
 import cors from "cors";
 
-const filmes = [
+import {dbPromise} from "./database/db.js";
+
+export const filmes = [
     {
         id: "filme-0",
         img: "https://4.bp.blogspot.com/-GW1Ex5rl1o8/VMG9B8zuM2I/AAAAAAAAQ-A/PdXFAKUlN2c/s1600/somaoredor1.jpeg&quot;",
@@ -57,8 +59,10 @@ app.get("/api", (req, res) => {
   return res.json({ message: "Servidor ativo" });
 });
 
-app.get("/api/filmes", (req, res) => {
-    return res.json({ filmes: filmes });
+app.get("/api/filmes", async (req, res) => {
+    const db = await dbPromise
+    const filmesDB = await db.all("SELECT * FROM filmes");
+    return res.json({ filmes: filmesDB });
 });
 
 app.listen(PORT, () => {
